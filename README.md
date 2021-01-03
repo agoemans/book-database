@@ -21,7 +21,7 @@ Steps to create:
     TITLE_TABLE_NAME=(name of your books table)
     AUTHOR_TABLE_NAME=(name of your authors table)
     BOOK_STATUS_TABLE_NAME==(name of your book status table)
-    DBUSER=(name of the database user
+    DBUSER=(name of the database user)
     DBPASSWORD=(password for db)
 ```
 
