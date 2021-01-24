@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "outDir": "./_build/",
+    "sourceMap": false,
+    "declaration": true,
+    "target": "es6",
+    "moduleResolution": "node"
+  },
+  "lib": ["es2015"],
+  "include": [
+    "client/src/index.tsx"
+  ]
+}
