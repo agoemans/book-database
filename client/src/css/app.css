@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla&family=Nunito:wght@300&family=Overpass:wght@300&amily=Kanit:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Oswald&Barlow+Semi+Condensed');
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Nunito:wght@300&family=Overpass:wght@300&amily=Kanit:wght@300&family=Oswald&Barlow+Semi+Condensed&display=swap');
 
 body {
     display: flex;
@@ -33,18 +32,6 @@ input {
 
 .app-content {
     /*display: flex;*/
-}
-
-.side-panel {
-    padding: 10px;
-    margin-block-start: 40px;
-    border-right: #e8e8e4 3px solid;
-}
-
-.side-panel button {
-    height: 50px;
-    width: 100px;
-    margin: 10px;
 }
 
 .books-content, .create-book-content {
@@ -124,7 +111,6 @@ input {
 .toggle-switch .switch {
     position: absolute;
     cursor: pointer;
-    /*background-color: #ced4da;*/
     background-color: #dee2e6;
     border-radius: 25px;
     top: 0;
@@ -141,17 +127,14 @@ input {
     width: 21px;
     height: 21px;
     background-color: #ced4da;
-    /*background-color: #dee2e6;*/
     border-radius: 50%;
     transition: transform 0.3s ease;
 }
 .toggle-switch input[type="checkbox"]:checked + .switch::before {
     transform: translateX(25px);
-    /*background-color: #abc4ff;*/
     background-color: #c8e7ff;
 }
 .toggle-switch input[type="checkbox"]:checked + .switch {
-    /*background-color: #c8e7ff;*/
     background-color: #abc4ff;
 }
 
