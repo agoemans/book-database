@@ -3,4 +3,3 @@ config.json
 .env
 dist
 .idea
-_build

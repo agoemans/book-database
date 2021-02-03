@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Nunito:wght@300&family=Overpass:wght@300&amily=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&Barlow+Semi+Condensed');
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Karla', sans-serif;
+    color: #013a63;
+}
+
+label {
+    font-family: 'Karla', sans-serif;
+    color: #264653;
+}
+
+input {
+    font-family: 'Overpass', sans-serif;
+    color: #003049;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+
+.app, .side-panel, .app-content {
+    display: flex;
+}
+
+.side-panel, .app-content {
+    flex-direction: column;
+}
+
+.app-content {
+    /*display: flex;*/
+}
+
+.side-panel {
+    padding: 10px;
+    margin-block-start: 40px;
+    border-right: #e8e8e4 3px solid;
+}
+
+.side-panel button {
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+}
+
+.books-content, .create-book-content {
+    text-align: left;
+    padding: 10px;
+}
+
+.books-content h1, .create-book-content h1 {
+    text-align: center;
+}
+
+
+.books-content h2, .create-book-content h2 {
+    font-family: 'Overpass', sans-serif;
+    color: #3a506b;
+    margin-block-end: 5px;
+    font-size: 20px;
+}
+
+.add-book-button {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: 'Nunito', sans-serif;
+    color: #065a60;
+    margin-block-end: 0.5em;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.add-book-button a {
+    text-decoration: none;
+    display: flex;
+}
+
+.add-book-button a:focus {
+    color: #f4978e;
+}
+
+.books-header, .book {
+    display: flex;
+}
+
+.books-header {
+    background-color: #d7e3fc;
+    margin-bottom: 10px;
+}
+
+.books-header-title {
+    width:400px;
+    margin-left: 20px;
+}
+
+.books-header-firstname, .books-header-lastname {
+    width:150px;
+}
+
+.books-header-status {
+    width:115px;
+}
+
+.book {
+    padding: 5px;
+    border-bottom: 1px solid #e2eafc;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    margin-block-start: 11px;
+    margin-left: 15px;
+}
+.toggle-switch input[type="checkbox"] {
+    display: none;
+}
+.toggle-switch .switch {
+    position: absolute;
+    cursor: pointer;
+    /*background-color: #ced4da;*/
+    background-color: #dee2e6;
+    border-radius: 25px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: background-color 0.2s ease;
+}
+.toggle-switch .switch::before {
+    position: absolute;
+    content: "";
+    left: 2px;
+    top: 2px;
+    width: 21px;
+    height: 21px;
+    background-color: #ced4da;
+    /*background-color: #dee2e6;*/
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+.toggle-switch input[type="checkbox"]:checked + .switch::before {
+    transform: translateX(25px);
+    /*background-color: #abc4ff;*/
+    background-color: #c8e7ff;
+}
+.toggle-switch input[type="checkbox"]:checked + .switch {
+    /*background-color: #c8e7ff;*/
+    background-color: #abc4ff;
+}
+
+.book-form, .book-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-book-content label {
+    margin: 5px 0 5px 0;
+}
+
+.book-input {
+    height: 40px;
+    width: 400px;
+    resize: none;
+    font-size: 22px;
+    padding-left: 5px;
+    border:1px solid #457b9d;
+}
+
+.book-input:focus {
+    outline: none !important;
+    border:1px solid #f4978e;
+}
+
+.submit-button-container {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.submit-button {
+    margin-top: 35px;
+    width: 100px;
+    height: 60px;
+    align-self: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: #b8c0ff;
+    border: 1px solid #6c75bd47;
+}
+
+.submit-button:focus {
+    outline: none;
+    background-color: #f4978e;
+    color: #680e4b;
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #98c1d9;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #98c1d9;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #98c1d9;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #98c1d9;
+}
+
+
+@fontface {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+@fontface {
+    font-family: 'Oswald', sans-serif;
+}
+
+@font-face {
+    font-family: 'Karla', sans-serif;
+}
+
+@font-face {
+    font-family: 'Nunito', sans-serif;
+}
+
+@font-face {
+    font-family: 'Kanit', sans-serif;
+}
