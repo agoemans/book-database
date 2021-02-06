@@ -3,5 +3,5 @@ export interface BookStatusModel {
     firstName: string,
     lastName: string,
     borrowed: boolean;
-    borrowerName: number;
+    borrowName: string;
 }

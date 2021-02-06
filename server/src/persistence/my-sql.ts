@@ -4,9 +4,10 @@ import {
     CreateBookRequest,
     CreateAuthorRequest,
     CreateBookStatusRequest,
-    UpdateBookStatusRequest,
-    Repository,
+    UpdateBookStatusRequest
 } from './types';
+
+import {Repository} from './repository';
 
 const mysql = require('mysql');
 
@@ -173,7 +174,7 @@ export class MySqlClient implements Repository {
             });
 
         } catch(err: any) {
-            throw new Error('Could not get specific authors: ' + err );
+            throw new Error('Could not get specific author: ' + err );
         }
     };
 
@@ -228,7 +229,7 @@ export class MySqlClient implements Repository {
                 firstName: bookStatus.first_name,
                 lastName: bookStatus.last_name,
                 borrowed: bookStatus.borrowed,
-                borrowerName: bookStatus.borrow_name
+                borrowName: bookStatus.borrow_name
             });
 
         } catch(err: any) {
