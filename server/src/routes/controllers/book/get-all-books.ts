@@ -5,7 +5,7 @@ import { repository } from '../../../persistence';
 export const getAllBooks = async (req: Request, res: Response) => {
     try {
         const getBookResults = await repository.getAllBooks();
-        res.status(201);
+        res.status(200);
         res.send(getBookResults);
 
     } catch (err) {

@@ -70,7 +70,7 @@ export class InMemory implements Repository {
     getAllAuthors = async () => this.authors;
 
     getBookStatus = async (title: string) => {
-        const bookStatus = this.bookStatus.find((bs) => bs.title = title);
+        const bookStatus = this.bookStatus.find((bs) => bs.title == title);
 
         if (!bookStatus) {
             throw new Error('Could not get book status');
